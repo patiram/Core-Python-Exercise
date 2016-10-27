@@ -1,8 +1,8 @@
 <h3>Singleton Design Pattern</h3>
 
-<dt>Ensuring that one and only one object of the class gets created</dt>
-<dt>Providing an access point for an object that is global to the program</dt>
-<dt>Controlling concurrent access to resources that are shared</dt>
+<li>Ensuring that one and only one object of the class gets created</li>
+<li>Providing an access point for an object that is global to the program</li>
+<li>Controlling concurrent access to resources that are shared</li>
 
 Concept:<br> Make constructor private and create a static method that does the object initialization. Each time return same existing object.
 
@@ -18,3 +18,23 @@ Python Concept:<br> when we create an instance of a class then first __new__ met
 
 More:
 Only when __new__ returns the created instance then __init__ gets called. If __new__ does not return an instance then __init__ would not be called. Remember __new__ is always called before __init__.
+
+
+
+
+<code>
+class Animal(object):
+	def __new__(cls, *args, **kwargs): #here new takes Class name itself as first arguments and returns instance of Animal 
+		print(cls)
+		print(args)
+		print(kwargs)
+		#if we return from here then it gives  <__main__.Animal at 0x343357390> 
+		obj_ins = object.__new__(cls, *args, **kwargs)
+		return obj_ins
+	#If __new__() does not return an instance of cls, then the new instance’s __init__() method will not be invoked.
+	#__new__() is intended mainly to allow subclasses of immutable types (like int, str, or tuple) to customize instance creation. It is also commonly overridden in custom metaclasses in order to customize class creation.
+	# https://docs.python.org/3/reference/datamodel.html#object.__new__
+	def __init__(self, a, b, c):
+		self.a, self.b, self.c = a, b, c
+		
+</code>
