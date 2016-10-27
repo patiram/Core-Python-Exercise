@@ -1,0 +1,18 @@
+<h3>Singleton Design Pattern</h3>
+
+<item>Ensuring that one and only one object of the class gets created</item>
+<item>Providing an access point for an object that is global to the program</item>
+<item>Controlling concurrent access to resources that are shared</item>
+
+Concept: Make constructor private and create a static method that does the object initialization. Each time return same existing object.
+
+Problem: Python don't have private constructor.
+
+Goal: Check each time object already exits or not. if yes then return the existing object else create new one
+
+Solution: Use __new__(special method and check if 
+
+
+
+Python Concept: when we create an instance of a class then first __new__ method is called and then only __init__ method. This means if we can stop __init__ from being called when we have already an instance then that particular class becomes Singleton. 
+
