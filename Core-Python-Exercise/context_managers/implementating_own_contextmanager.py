@@ -1,0 +1,33 @@
+'''
+Created on Oct 26, 2016 2:52:09 PM
+
+@author: Pati Ram Yadav
+
+@Path: C:\JavaDev\Eclipse Mars.2 (4.5.2)\plugins\org.python.pydev_5.2.0.201608171824\pysrc\pydevd.py
+
+@Module: context_managers.implementating_own_contextmanager
+
+'''
+class File(object):
+    def __init__(self, file_name, *method):
+        print(method)
+        if method == ():
+            self.file_obj = open(file_name)
+        else:
+            self.file_obj = open(file_name, method[0])
+    def __enter__(self):
+        return self.file_obj
+    # order of arguments in __exit__method should be in same manner
+    def __exit__(self, exception_type, exception_value, traceback):
+        self.file_obj.close()
+        
+    def write(self, text):
+        self.file_obj.write(text)
+    
+    def read(self):
+        return self.file_obj.read()
+        
+if __name__ == "__main__":
+    with File("a.txt", 'w') as my_file:
+        for line in my_file:
+            print(line)
