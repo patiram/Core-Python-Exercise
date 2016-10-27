@@ -22,18 +22,22 @@ Only when __new__ returns the created instance then __init__ gets called. If __n
 
 
 
-<code>
-class Animal(object):<br>
-	def __new__(cls, *args, **kwargs): #here new takes Class name itself as first arguments and returns instance of Animal <br>
-		print(cls)<br>
-		print(args)<br>
-		print(kwargs)<br>
-		#if we return from here then it gives  <__main__.Animal at 0x343357390> <br>
+```python
+
+
+class Animal(object):
+	def __new__(cls, *args, **kwargs): #here new takes Class name itself as first arguments and returns instance of Animal 
+		print(cls)
+		print(args)
+		print(kwargs)
+		#if we return from here then it gives  <__main__.Animal at 0x343357390>
 		obj_ins = object.__new__(cls, *args, **kwargs)<br>
-		return obj_ins<br>
+		return obj_ins
 	#If __new__() does not return an instance of cls, then the new instance’s __init__() method will not be invoked. <br>
 	#__new__() is intended mainly to allow subclasses of immutable types (like int, str, or tuple) to customize instance creation. It is also commonly overridden in custom metaclasses in order to customize class creation.<br>
 	# https://docs.python.org/3/reference/datamodel.html#object.__new__<br>
 	def __init__(self, a, b, c):<br>
 		self.a, self.b, self.c = a, b, c<br>
-</code>
+		
+		
+```
