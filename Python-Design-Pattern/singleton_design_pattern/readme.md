@@ -34,8 +34,8 @@ class Animal(object):
 		obj_ins = object.__new__(cls, *args, **kwargs)<br>
 		return obj_ins
 	#If __new__() does not return an instance of cls, then the new instance’s __init__() method will not be invoked. <br>
-	#__new__() is intended mainly to allow subclasses of immutable types (like int, str, or tuple) to customize instance creation. It is also commonly overridden in custom metaclasses in order to customize class creation.<br>
-	# https://docs.python.org/3/reference/datamodel.html#object.__new__<br>
+	'''__new__() is intended mainly to allow subclasses of immutable types (like int, str, or tuple) to customize instance creation. It is also commonly overridden in custom metaclasses in order to customize class creation.'''
+	# https://docs.python.org/3/reference/datamodel.html#object.__new__
 	def __init__(self, a, b, c):<br>
 		self.a, self.b, self.c = a, b, c<br>
 		

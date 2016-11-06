@@ -1,0 +1,5 @@
+<h3>Singleton Design Pattern</h3>
+
+<item>Ensuring that one and only one object of the class gets created</item>
+<item>Providing an access point for an object that is global to the program</item>
+<item>Controlling concurrent access to resources that are shared</item>
