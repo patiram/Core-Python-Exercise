@@ -1,0 +1,8 @@
+<b>Context Managers</b>
+--Use to allocate and release resources precisely
+<br>
+The most widely used context manager is <b>with</b>
+
+Every context manager must have at least __enter__ and __exit__ methods defined.
+
+

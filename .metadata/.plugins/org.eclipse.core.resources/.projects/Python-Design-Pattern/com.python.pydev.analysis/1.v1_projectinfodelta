@@ -1,0 +1,16 @@
+INSTUPsingleton_design_pattern.singleton_private_inner_class
+C:\Users\patir\Documents\GitHub\Core-Python-Exercise\Python-Design-Pattern\singleton_design_pattern\singleton_private_inner_class.py
+INFOS:&&1|1|2|0&&1|3|2|1&&2|4|2|5&&3|6|2|7&&2|8|2|5&&3|9|2|1&&2|4|2|1&&2|10|2|1&&3|11|2|0&&3|12|2|0&&3|13|2|0
+val=6
+instance=9
+__str__=8
+OnlyOne.__OnlyOne.__init__=7
+OnlyOne.__OnlyOne=5
+singleton_design_pattern.singleton_private_inner_class=2
+OnlyOne=1
+__getattr__=10
+x=11
+y=12
+__OnlyOne=3
+z=13
+__init__=4
