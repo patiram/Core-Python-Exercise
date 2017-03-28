@@ -1,4 +1,0 @@
-<b>Context Managers</b>
---Use to allocate and release resources precisely
-<br>
-The most widely used context manager is <b>with</b> in python

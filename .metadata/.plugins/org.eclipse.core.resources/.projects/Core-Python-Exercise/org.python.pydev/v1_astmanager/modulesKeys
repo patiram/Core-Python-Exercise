@@ -1,7 +1,0 @@
-MODULES_MANAGER_V2
-context_managers.__init__|C:\Users\patir\Documents\GitHub\Core-Python-Exercise\Core-Python-Exercise\context_managers\__init__.py
-context_managers.contextmanager_with|C:\Users\patir\Documents\GitHub\Core-Python-Exercise\Core-Python-Exercise\context_managers\contextmanager_with.py
-context_managers.implementating_own_contextmanager|C:\Users\patir\Documents\GitHub\Core-Python-Exercise\Core-Python-Exercise\context_managers\implementating_own_contextmanager.py
-context_managers.test_implementating_own_contextmanager|C:\Users\patir\Documents\GitHub\Core-Python-Exercise\Core-Python-Exercise\context_managers\test_implementating_own_contextmanager.py
-new_vs_init.__init__|C:\Users\patir\Documents\GitHub\Core-Python-Exercise\Core-Python-Exercise\new_vs_init\__init__.py
-new_vs_init.new_vs_init_method|C:\Users\patir\Documents\GitHub\Core-Python-Exercise\Core-Python-Exercise\new_vs_init\new_vs_init_method.py
